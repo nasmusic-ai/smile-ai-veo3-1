@@ -17,10 +17,10 @@ const getEnvApiKey = (): string | undefined => {
       return envKey;
     }
     // Fallback to the specific key provided by user to fix configuration issues
-    return "AIzaSyClN9faPK0phC6OB3OD-ODQiPTsivvjdfE";
+    return "";
   } catch (e) {
     // If process.env fails entirely, use the fallback
-    return "AIzaSyClN9faPK0phC6OB3OD-ODQiPTsivvjdfE";
+    return "";
   }
 };
 
